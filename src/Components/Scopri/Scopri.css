@@ -1,0 +1,33 @@
+.scopri-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.scopri-container img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.scopri-container .scopri-text1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.scopri-container .scopri-text2 {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+.scopri-container .citta {
+  position: absolute;
+  top: 70%;
+  transform: translate(2%, -5%);
+}
+.scopri-container .citta h5 {
+  background-color: #2779a7;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #f4c542;
+  border: solid 2px #eab308;
+  border-radius: 5px;
+}

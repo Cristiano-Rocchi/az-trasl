@@ -21,10 +21,11 @@ const Landing = () => {
             traslochi, lavori edili, giardinaggio <br /> e molto altro
           </h1>
           <div className="d-flex justify-content-center gap-5 mt-5">
-            <Button>Contattaci</Button>
-            <Button>Scopri di piu</Button>
+            <Button className="btn-land">Contattaci</Button>
+            <Button className="btn-land">Scopri di piu</Button>
           </div>
         </div>
+        <h5>Traslochi da 120€</h5>
       </div>
       {/*-----2-------*/}
       <Scopri />

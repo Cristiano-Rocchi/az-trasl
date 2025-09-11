@@ -1,33 +1,67 @@
 .scopri-container {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Chambrush;
+  background-image: url(../../../public/img/scopri-img.webp);
+  background-size: cover;
+  background-position: center;
 }
-.scopri-container img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
+
+/*SCOPRI TEXT 1*/
+.scopri-text1 h2 {
+  color: #2779a7;
 }
-.scopri-container .scopri-text1 {
-  position: absolute;
-  top: 10%;
-  left: 5%;
+.scopri-text1 span {
+  color: #1018c0;
 }
-.scopri-container .scopri-text2 {
-  position: absolute;
-  top: 60%;
-  left: 60%;
+
+.scopri-text1 {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 1s ease-out forwards;
 }
-.scopri-container .citta {
-  position: absolute;
-  top: 70%;
-  transform: translate(2%, -5%);
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.scopri-container .citta h5 {
+
+/*SCOPRI TEXT 2*/
+
+.scopri-text2 .citta h5 {
   background-color: #2779a7;
-  padding: 0.5rem;
+  padding: 0.6rem;
   font-size: 1rem;
   color: #f4c542;
   border: solid 2px #eab308;
   border-radius: 5px;
+  margin: auto;
+}
+.scopri-text2 .citta .citta-anim1 {
+  transform: rotate(-5deg);
+}
+.scopri-text2 .citta .citta-anim2 {
+  transform: rotate(5deg);
+}
+
+/* Animazione Van*/
+.animation img {
+  width: 110px;
+}
+.van {
+  animation: van-drive 10s linear infinite;
+}
+
+@keyframes van-drive {
+  from {
+    transform: translateX(-120%);
+  } /* parte da fuori a sinistra */
+  to {
+    transform: translateX(88vw);
+  } /* esce a destra */
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Scopri.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 const Scopri = () => {
   return (
@@ -55,6 +55,9 @@ const Scopri = () => {
                 <h5 className="citta-anim1">ALLUMIERE</h5>
                 <h5 className="citta-anim2">TARQUINIA</h5>
                 <h5 className="citta-anim1">MOLTO ALTRO</h5>
+              </div>
+              <div className="text-center">
+                <Button className="btn-land mt-5">Contattaci</Button>
               </div>
             </div>
           </Col>

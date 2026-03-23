@@ -8,7 +8,7 @@ const Landing = () => {
   // 2. Scopri di piu
   return (
     <>
-      {/*-----1-------*/}
+      {/*-----1------- VIALE DELLA VITTORIA 6*/}
       <div className="landing-container">
         <img
           className="landing-image"

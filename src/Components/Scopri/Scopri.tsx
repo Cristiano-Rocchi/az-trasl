@@ -54,7 +54,7 @@ const Scopri = () => {
                 <h5 className="citta-anim2">TOLFA</h5>
                 <h5 className="citta-anim1">ALLUMIERE</h5>
                 <h5 className="citta-anim2">TARQUINIA</h5>
-                <h5 className="citta-anim1">MOLTO ALTRO</h5>
+                <h5 className="citta-anim1">ROMA</h5>
               </div>
               <div className="text-center">
                 <Button className="btn-land mt-5">Contattaci</Button>

@@ -37,3 +37,56 @@
   border-radius: 10px;
   display: block;
 }
+
+/* --- RESPONSIVENESS NAV --- */
+
+/* Tablet (iPad) */
+@media (max-width: 992px) {
+  .my-nav img {
+    width: 150px; /* Ridotto leggermente */
+  }
+
+  .btn-grad {
+    padding: 10px 30px; /* Meno ingombrante */
+    font-size: 14px;
+  }
+}
+
+/* Mobile (Smartphone) */
+@media (max-width: 576px) {
+  .my-nav {
+    width: 90%; /* Evita che tocchi i bordi */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5px; /* Un po' più di respiro dal bordo superiore */
+  }
+
+  .my-nav img {
+    width: 130px; /* Logo più piccolo per lasciare spazio al contenuto */
+  }
+
+  .my-nav .logo p {
+    font-size: 9px; /* Testo del logo più discreto */
+    margin-top: -15px;
+    text-align: center;
+  }
+
+  .btn-grad {
+    padding: 8px 20px;
+    font-size: 12px;
+    margin: 5px; /* Riduciamo i margini esterni */
+    width: auto; /* Evita che si allarghi troppo */
+  }
+}
+
+/* Ottimizzazione per schermi extra piccoli (es. iPhone SE) */
+@media (max-width: 375px) {
+  .my-nav img {
+    width: 110px;
+  }
+
+  .btn-grad {
+    display: none; /* Opzionale: nascondi il bottone extra se lo spazio è troppo poco */
+  }
+}

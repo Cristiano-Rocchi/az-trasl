@@ -86,3 +86,59 @@
     left: 130%;
   }
 }
+
+/* --- RESPONSIVENESS --- */
+
+/* Tablet (iPad e schermi medi) */
+@media (max-width: 992px) {
+  .landing-text {
+    width: 90%;
+    top: 45%;
+  }
+  .landing-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile (Smartphone) */
+@media (max-width: 576px) {
+  .landing-text {
+    width: 95%;
+    top: 50%;
+  }
+
+  .landing-container h1 {
+    font-size: 1.3rem; /* Ridotto per non far sparire l'immagine */
+  }
+
+  /* Gestione dei bottoni su mobile */
+  .landing-text .d-flex {
+    flex-direction: column !important; /* Mette i bottoni uno sopra l'altro */
+    gap: 1.5rem !important; /* Riduce lo spazio tra i bottoni */
+    align-items: center;
+  }
+
+  .btn-land {
+    width: 100%; /* Bottoni a tutta larghezza (più facili da cliccare) */
+    max-width: 250px;
+    padding: 0.6rem 1.5rem;
+  }
+
+  /* Posizionamento del badge prezzo su mobile */
+  .landing-container h5 {
+    top: 10%;
+    left: 5%;
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+/* Correzione per schermi molto piccoli o landscape */
+@media (max-height: 500px) {
+  .landing-container h1 {
+    font-size: 1.1rem;
+  }
+  .landing-text {
+    top: 55%;
+  }
+}

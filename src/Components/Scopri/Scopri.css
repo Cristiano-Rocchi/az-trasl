@@ -65,3 +65,80 @@
     transform: translateX(88vw);
   } /* esce a destra */
 }
+
+/* --- RESPONSIVENESS SCOPRI --- */
+
+/* Tablet (iPad) */
+@media (max-width: 992px) {
+  .scopri-container {
+    height: auto; /* Permettiamo alla sezione di allungarsi se serve */
+    padding: 50px 0;
+    min-height: 100vh;
+  }
+
+  .scopri-text1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile (Smartphone) */
+@media (max-width: 576px) {
+  .scopri-container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 30px; /* Spazio tra i vari blocchi di testo */
+    padding: 40px 15px;
+    overflow: hidden; /* Fondamentale per non far uscire il furgone dallo schermo */
+  }
+
+  /* Testo 1 */
+  .scopri-text1 {
+    text-align: center;
+    transform: translateX(-50px); /* Ridotto lo spostamento iniziale */
+  }
+
+  .scopri-text1 h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Città e Badge */
+  .scopri-text2 .citta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .scopri-text2 .citta h5 {
+    width: 80%; /* I badge diventano più larghi e leggibili */
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* Animazione Van Mobile */
+  .animation img {
+    width: 80px; /* Furgone più piccolo su mobile */
+  }
+
+  @keyframes van-drive {
+    from {
+      transform: translateX(-150%);
+    }
+    to {
+      transform: translateX(110vw); /* Assicuriamoci che esca completamente */
+    }
+  }
+}
+
+/* Ottimizzazione per schermi molto piccoli */
+@media (max-width: 380px) {
+  .scopri-text1 h2 {
+    font-size: 1.1rem;
+  }
+
+  .scopri-text2 .citta h5 {
+    width: 95%;
+  }
+}

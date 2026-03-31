@@ -57,7 +57,9 @@ const Scopri = () => {
                 <h5 className="citta-anim1">ROMA</h5>
               </div>
               <div className="text-center">
-                <Button className="btn-land mt-5">Contattaci</Button>
+                <Button className="btn-land" href="tel:+393923996323">
+                  Contattaci
+                </Button>
               </div>
             </div>
           </Col>

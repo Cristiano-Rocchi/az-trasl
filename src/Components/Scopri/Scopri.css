@@ -142,3 +142,28 @@
     width: 95%;
   }
 }
+
+@media (max-width: 768px) {
+  /* Seleziona il contenitore flex delle città */
+  .scopri-text2 .citta .d-flex {
+    flex-wrap: wrap; /* Permette di andare a capo */
+    justify-content: center; /* Centra le card */
+    gap: 10px !important; /* Riduciamo il gap di Bootstrap che è troppo largo */
+  }
+
+  /* Gestione delle card h5 per farle stare 2 per riga */
+  .scopri-text2 .citta h5 {
+    /* calc(50% - metà del gap) per farle stare precise */
+    width: calc(50% - 10px);
+    margin: 0 !important; /* Rimuove margini automatici */
+    font-size: 0.8rem; /* Riduce leggermente il testo per farlo stare in una riga */
+    padding: 0.8rem 0.2rem; /* Spazio interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px; /* Altezza uniforme per tutte le card */
+  }
+  .scopri-text2 h4 {
+    text-align: center !important;
+  }
+}

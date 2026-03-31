@@ -28,7 +28,9 @@ const Landing = () => {
               <Button className="btn-land" href="tel:+393923996323">
                 Contattaci
               </Button>
-              <Button className="btn-land">Scopri di piu</Button>
+              <Button className="btn-land" href="#scopri-sezione">
+                Scopri di piu
+              </Button>
             </div>
           </div>
         </div>

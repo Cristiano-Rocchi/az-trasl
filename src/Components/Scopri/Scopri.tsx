@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Scopri = () => {
   return (
     <>
-      <Container className="scopri-container">
+      <Container className="scopri-container" id="scopri-sezione">
         <Row>
           <Col>
             <motion.div

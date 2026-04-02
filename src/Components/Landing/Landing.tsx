@@ -19,7 +19,8 @@ const Landing = () => {
           <div className="landing-text">
             <h1>
               Contattaci per un <br /> servizio rapido e professionale: <br />{" "}
-              traslochi, lavori edili, giardinaggio <br /> e molto altro
+              traslochi, lavori edili, giardinaggio, sgomberi e rimozione
+              calcinacci <br /> e molto altro
             </h1>
           </div>
 
